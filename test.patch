@@ -1,0 +1,11 @@
+--- oslo.log-1.0.0/test-requirements.txt~	2015-03-09 10:20:33.000000000 -0400
++++ oslo.log-1.0.0/test-requirements.txt	2015-05-31 18:49:26.450845697 -0400
+@@ -2,7 +2,7 @@
+ # of appearance. Changing the order has an impact on the overall integration
+ # process, which may cause wedges in the gate later.
+ 
+-hacking>=0.9.1,<0.10
++hacking
+ 
+ discover
+ fixtures>=0.3.14
