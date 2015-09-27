@@ -4,7 +4,7 @@
 #
 Name     : oslo.log
 Version  : 1.11.0
-Release  : 12
+Release  : 13
 URL      : http://tarballs.openstack.org/oslo.log/oslo.log-1.11.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.log/oslo.log-1.11.0.tar.gz
 Summary  : oslo.log library
@@ -24,6 +24,7 @@ BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
 BuildRequires : flake8-python
+BuildRequires : funcsigs-python
 BuildRequires : hacking
 BuildRequires : iso8601
 BuildRequires : linecache2-python
@@ -75,6 +76,11 @@ oslo.log -- Oslo Logging Library
 %package python
 Summary: python components for the oslo.log package.
 Group: Default
+Requires: six-python
+Requires: debtcollector-python
+Requires: Babel-python
+Requires: oslo.i18n-python
+Requires: oslo.context-python
 
 %description python
 python components for the oslo.log package.
