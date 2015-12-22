@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* Set keystoneauth default log level to WARN
+* Format record before passing it to syslog
+* Updated from global requirements
+* Updated from global requirements
+
 2.1.0
 -----
 
