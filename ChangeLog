@@ -1,13 +1,25 @@
 CHANGES
 =======
 
+2.3.0
+-----
+
+* Improve documentataion of Oslo Log Usage
+* Added public method to getting default log levels
+* Updated from global requirements
+* enable isotime for exceptions
+* assertIsNone(val) instead of assertEqual(None,val)
+
 2.2.0
 -----
 
 * Set keystoneauth default log level to WARN
+* Add ISO8601/RFC3339 timestamp to ContextFormatter
 * Format record before passing it to syslog
 * Updated from global requirements
+* Pass environment variables of proxy to tox
 * Updated from global requirements
+* Trival: Remove 'MANIFEST.in'
 
 2.1.0
 -----

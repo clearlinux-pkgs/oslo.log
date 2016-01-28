@@ -42,3 +42,4 @@ linecache2-python
 oslo.serialization
 oslo.utils
 iso8601
+python-dateutil-python
