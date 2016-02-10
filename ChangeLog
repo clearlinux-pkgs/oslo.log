@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+2.4.0
+-----
+
+* Updated from global requirements
+* set oslo.cache and dogpile to INFO
+* Update translation setup
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Improve Logging docs with inline examples and context example
+* Revert "Pass environment variables of proxy to tox"
+* Clean up removed hacking rule from [flake8] ignore lists
+* Provide a deprecated_reason for use_syslog_rfc_format
+
 2.3.0
 -----
 
