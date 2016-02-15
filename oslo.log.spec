@@ -4,7 +4,7 @@
 #
 Name     : oslo.log
 Version  : 2.4.0
-Release  : 22
+Release  : 23
 URL      : http://tarballs.openstack.org/oslo.log/oslo.log-2.4.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.log/oslo.log-2.4.0.tar.gz
 Summary  : oslo.log library
