@@ -1,10 +1,19 @@
 CHANGES
 =======
 
+3.0.0
+-----
+
+* remove pypy from default tox environment list
+* stop making a copy of options discovered by config generator
+* always run coverage report
+* Remove bandit.yaml in favor of defaults
+
 2.4.0
 -----
 
 * Updated from global requirements
+* Fix spell typos
 * set oslo.cache and dogpile to INFO
 * Update translation setup
 * Updated from global requirements
@@ -16,6 +25,7 @@ CHANGES
 * Revert "Pass environment variables of proxy to tox"
 * Clean up removed hacking rule from [flake8] ignore lists
 * Provide a deprecated_reason for use_syslog_rfc_format
+* Remove deprecated log-format option
 
 2.3.0
 -----
