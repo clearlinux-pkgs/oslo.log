@@ -1,9 +1,26 @@
 CHANGES
 =======
 
+3.2.0
+-----
+
+* use log.warning instead of log.warn
+* Imported Translations from Zanata
+* Updated from global requirements
+* Remove deprecated use-syslog-rfc-format option
+
+3.1.0
+-----
+
+* Add release note for removed log_format option
+* Updated from global requirements
+* add page for release notes for unreleased versions
+* add a release note about using reno
+
 3.0.0
 -----
 
+* Add reno for release notes management
 * remove pypy from default tox environment list
 * stop making a copy of options discovered by config generator
 * always run coverage report
