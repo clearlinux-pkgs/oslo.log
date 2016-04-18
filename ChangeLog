@@ -1,11 +1,22 @@
 CHANGES
 =======
 
-3.3.0
+3.4.0
 -----
 
 * Updated from global requirements
-* Update .gitreview for stable/mitaka
+* Updated from global requirements
+* Updated from global requirements
+* Remove outdated comment in ContextFormatter
+* Enable log_method_call to work on static method
+* Explicitly exclude tests from bandit scan
+* Improve test code coverage of _options
+* Update reno for stable/mitaka
+* Unit test cleanup and validation improvements
+* Added +2 release names for versionutils
+* Fix broken links in docs usage page
+* Enable bandit in gate
+* Updated from global requirements
 
 3.2.0
 -----
