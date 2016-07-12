@@ -1,6 +1,49 @@
 CHANGES
 =======
 
+3.11.0
+------
+
+
+3.10.0
+------
+
+* Updated from global requirements
+* Provide a normal method for deprecation warnings
+
+3.9.0
+-----
+
+* Updated from global requirements
+* Make available to log encoded strings as arguments
+* Updated from global requirements
+* Fix typo: 'Olso' to 'Oslo'
+* Updated from global requirements
+* Convert unicode data to utf-8 before calling syslog.syslog()
+* log: don't create foo.log
+* Updated from global requirements
+* Use new logging specific method for context info
+* Reduce READ_FREQ and TIMEOUT for watch-file
+
+3.8.0
+-----
+
+* Revert "Remove 'verbose' option"
+* Fix regression causing the default log level to become WARNING
+* Remove 'verbose' option
+
+3.7.0
+-----
+
+* Fix example issue
+* Updated from global requirements
+* Allow reload of 'debug' option
+
+3.6.0
+-----
+
+* Imported Translations from Zanata
+
 3.5.0
 -----
 
@@ -15,6 +58,7 @@ CHANGES
 * Remove outdated comment in ContextFormatter
 * Enable log_method_call to work on static method
 * Explicitly exclude tests from bandit scan
+* Improve olso.log test coverage for edge cases
 * Improve test code coverage of _options
 * Update reno for stable/mitaka
 * Unit test cleanup and validation improvements
