@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+3.12.0
+------
+
+* Replace "LOG.exception(_" with "LOG.exception(_LE"
+* Updated from global requirements
+* Reload log_config_append config on SIGHUP
+* Imported Translations from Zanata
+* Updated from global requirements
+* log: Introduce _iter_loggers
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+
 3.11.0
 ------
 
