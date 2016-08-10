@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+3.13.0
+------
+
+* Updated from global requirements
+* Fix parameters of assertEqual are misplaced
+* Updated from global requirements
+* Remove discover from test-requirements
+* Add Python 3.5 classifier and venv
+
 3.12.0
 ------
 
