@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+3.16.0
+------
+
+* Updated from global requirements
+
+3.15.0
+------
+
+
+3.14.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Fixes unit tests on Windows
+
 3.13.0
 ------
 
