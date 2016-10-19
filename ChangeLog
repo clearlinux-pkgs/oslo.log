@@ -1,10 +1,31 @@
 CHANGES
 =======
 
+3.17.0
+------
+
+* Modify use of assertTrue(A in B)
+* Change assertTrue(isinstance()) by optimal assert
+* Add a json reformatter command
+* Enable release notes translation
+* Add support for P and Q release names
+* Updated from global requirements
+* Updated from global requirements
+* modify the home-page info with the developer documentation
+* Add a filter to rate limit logs
+* Implement FluentFormatter
+* Fix races in unit tests
+* standardize release note page ordering
+* Use six.wraps instead of functools
+* Update reno for stable/newton
+* Updated from global requirements
+* Fix typos
+
 3.16.0
 ------
 
 * Updated from global requirements
+* Default use_stderr to False
 
 3.15.0
 ------
