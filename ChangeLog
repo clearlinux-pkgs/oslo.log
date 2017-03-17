@@ -1,6 +1,43 @@
 CHANGES
 =======
 
+3.21.0
+------
+
+* Added is_debug_enabled helper
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Revert "Remove 'verbose' option (again)"
+* Updated from global requirements
+* Remove support for py34
+* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo_xyz)
+* tail support, log filtering, executable, and splitlines bug fix
+* Must not go underneath the context object and access __dict__
+* Fix devstack colors
+* Update reno for stable/ocata
+* Remove 'verbose' option (again)
+* Remove references to Python 3.4
+
+3.20.0
+------
+
+* Replace method attr in vars() to hasattr
+* Add Constraints support
+
+3.19.0
+------
+
+* Avoid converting to unicode if not needed
+* Show team and repo badges on README
+
+3.18.0
+------
+
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+
 3.17.0
 ------
 
