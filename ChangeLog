@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.22.0
+------
+
+* Updated from global requirements
+* Remove 'verbose' option (again)
+
 3.21.0
 ------
 
