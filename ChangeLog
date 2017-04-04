@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+3.23.0
+------
+
+* Trivial: Remove testscenarios from test-requirements.txt
+* Check reStructuredText documents for common style issues
+* Use Sphinx 1.5 warning-is-error
+* Fix some reST field lists in docstrings
+* Remove log translations
+
 3.22.0
 ------
 
