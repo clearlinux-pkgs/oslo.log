@@ -6,7 +6,7 @@
 #
 Name     : oslo.log
 Version  : 3.22.0
-Release  : 44
+Release  : 45
 URL      : http://tarballs.openstack.org/oslo.log/oslo.log-3.22.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.log/oslo.log-3.22.0.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.log/oslo.log-3.22.0.tar.gz.asc
@@ -61,12 +61,12 @@ python components for the oslo.log package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1490883829
+export SOURCE_DATE_EPOCH=1491342553
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1490883829
+export SOURCE_DATE_EPOCH=1491342553
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -83,4 +83,5 @@ echo ----[ mark ]----
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python*/*
+/usr/lib/python2*/*
+/usr/lib/python3*/*
