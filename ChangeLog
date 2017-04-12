@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+3.24.0
+------
+
+* add an extras dependency for systemd
+* Always create OSSysLogHandler
+* protect systemd class initialization when syslog is not available
+* Documentation for journal usage
+* Systemd native journal support
+* When record.args is None, it should not give an exception
+
 3.23.0
 ------
 
