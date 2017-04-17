@@ -1,10 +1,17 @@
 CHANGES
 =======
 
+3.25.0
+------
+
+* Fix syslog module usage breaking Windows compatibility
+* Updated from global requirements
+
 3.24.0
 ------
 
 * add an extras dependency for systemd
+* Optimize the link address
 * Always create OSSysLogHandler
 * protect systemd class initialization when syslog is not available
 * Documentation for journal usage

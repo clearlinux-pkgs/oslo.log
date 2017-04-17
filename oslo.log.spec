@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xEB6CCA1483FA74EC (infra-root@openstack.org)
 #
 Name     : oslo.log
-Version  : 3.24.0
-Release  : 47
-URL      : http://tarballs.openstack.org/oslo.log/oslo.log-3.24.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.log/oslo.log-3.24.0.tar.gz
-Source99 : http://tarballs.openstack.org/oslo.log/oslo.log-3.24.0.tar.gz.asc
+Version  : 3.25.0
+Release  : 48
+URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.25.0.tar.gz
+Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.25.0.tar.gz
+Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.25.0.tar.gz.asc
 Summary  : oslo.log library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -37,8 +37,8 @@ BuildRequires : setuptools
 ========================
 Team and repository tags
 ========================
-.. image:: http://governance.openstack.org/badges/oslo.log.svg
-:target: http://governance.openstack.org/reference/tags/index.html
+.. image:: https://governance.openstack.org/badges/oslo.log.svg
+:target: https://governance.openstack.org/reference/tags/index.html
 
 %package bin
 Summary: bin components for the oslo.log package.
@@ -57,16 +57,16 @@ python components for the oslo.log package.
 
 
 %prep
-%setup -q -n oslo.log-3.24.0
+%setup -q -n oslo.log-3.25.0
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1492017382
+export SOURCE_DATE_EPOCH=1492457603
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1492017382
+export SOURCE_DATE_EPOCH=1492457603
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
