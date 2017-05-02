@@ -6,7 +6,7 @@
 #
 Name     : oslo.log
 Version  : 3.26.0
-Release  : 50
+Release  : 51
 URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.0.tar.gz
 Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.0.tar.gz
 Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.0.tar.gz.asc
