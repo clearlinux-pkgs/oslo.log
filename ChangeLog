@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+3.26.1
+------
+
+* Use dict arg values for unicode checks in ContextFormatter
+
 3.26.0
 ------
 

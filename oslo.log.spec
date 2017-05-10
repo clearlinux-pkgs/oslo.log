@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xEB6CCA1483FA74EC (infra-root@openstack.org)
 #
 Name     : oslo.log
-Version  : 3.26.0
-Release  : 51
-URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.0.tar.gz
-Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.0.tar.gz
-Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.0.tar.gz.asc
+Version  : 3.26.1
+Release  : 52
+URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.1.tar.gz
+Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.1.tar.gz
+Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.26.1.tar.gz.asc
 Summary  : oslo.log library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -57,19 +57,19 @@ python components for the oslo.log package.
 
 
 %prep
-%setup -q -n oslo.log-3.26.0
+%setup -q -n oslo.log-3.26.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1493081150
+export SOURCE_DATE_EPOCH=1494444187
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1493081150
+export SOURCE_DATE_EPOCH=1494444187
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
