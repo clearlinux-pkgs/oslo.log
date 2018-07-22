@@ -1,6 +1,154 @@
 CHANGES
 =======
 
+3.39.0
+------
+
+* Add release notes link to README
+* Automatically append reset\_color to log lines
+* fix tox python3 overrides
+* Provide reset\_color key on log record
+* tox: Group targets and tool configuration together
+* tox: Don't set basepython in testenv
+
+3.38.1
+------
+
+* Fix Formatter subclasses for Python 3.2+
+* Fix file permissions
+* Remove stale pip-missing-reqs tox test
+* Trivial: Update pypi url to new url
+* Fix sphinx-docs job
+* set default python to python3
+
+3.38.0
+------
+
+* Add Stein release to versionutils
+* Add ROCKY to deprecated releases
+* add lower-constraints job
+* Increase sleep time in testsuite to make it more robust
+* Updated from global requirements
+
+3.37.0
+------
+
+* Add Rocky release to versionutils.\_RELEASES
+* Updated from global requirements
+* Update links in README
+* Imported Translations from Zanata
+* Zuul: Remove project name
+* Imported Translations from Zanata
+* Zuul: Remove project name
+* Update reno for stable/queens
+* Updated from global requirements
+* Imported Translations from Zanata
+* update structured logging tests to prove context id is included
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
+3.36.0
+------
+
+* Truncate error\_summary if exc\_info not explicitly passed
+* Cleanup test-requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+
+3.35.0
+------
+
+* Updated from global requirements
+
+3.34.0
+------
+
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Capture context in its own key for JSON-based formatters
+
+3.33.0
+------
+
+* Updated from global requirements
+* Remove checks for auth\_token in JSON-based formatter tests
+* Add release note for use\_json option
+* Add option to use JSON formatter
+* Updated from global requirements
+* Zuul: add file extension to playbook path
+* JSONFormatter convert unserializable with repr()
+
+3.32.0
+------
+
+* Allow logging of unhashable exceptions in Python 3
+* Updated from global requirements
+* Migrate to Zuul v3
+* Imported Translations from Zanata
+* Updated from global requirements
+
+3.31.0
+------
+
+* Updated from global requirements
+* Update the documentation link for doc migration
+* Update the documentation link
+* Updated from global requirements
+* Update reno for stable/pike
+* Updated from global requirements
+
+3.30.0
+------
+
+* Updated from global requirements
+* Update URLs according to document migration
+* Add missing variable html\_last\_updated\_fmt
+
+3.29.0
+------
+
+* Updated from global requirements
+* switch from oslosphinx to openstackdocstheme
+* rearrange content to fit the new standard layout
+* only show error\_summary for warning and error messages
+* Updated from global requirements
+* Add log.get\_loggers method
+* Updated from global requirements
+
+3.28.1
+------
+
+* do not add error\_summary for debug log messages
+
+3.28.0
+------
+
+* Updated from global requirements
+* formatter: skip ImportError when adding error\_summary
+* Updated from global requirements
+
+3.27.0
+------
+
+* Updated from global requirements
+* Fix bug in log\_method\_call decorator
+* clarify release note for error summary handling
+* fix test description comment
+* Updated from global requirements
+* Oslo i18n 3.15.2 has broken deps
+* Remove deprecated module loggers
+* Updated from global requirements
+* add line number information to fluentd formatter
+* add error\_summary support for fluentd formatter
+* add error\_summary support to JSONFormatter
+* refactor error summary logic so it can be reused
+* improve the documentation for log format strings
+* skip built-in exceptions when adding error\_summary
+* make handling of error\_summary more flexible
+* add exception summaries to the main log line
+* Updated from global requirements
+
 3.26.1
 ------
 
