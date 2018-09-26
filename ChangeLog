@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+3.40.1
+------
+
+* Filter args dict in JSONFormatter
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* rewrite tests to not rely on implementation details of logging module
+* import zuul job settings from project-config
+* Follow the new PTI for document build
+* Migrate to stestr
+* Fix lower-constraints job
+* Imported Translations from Zanata
+* Update reno for stable/rocky
+
 3.39.0
 ------
 
