@@ -6,23 +6,20 @@
 #
 Name     : oslo.log
 Version  : 3.40.1
-Release  : 56
+Release  : 57
 URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.40.1.tar.gz
 Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.40.1.tar.gz
 Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.40.1.tar.gz.asc
 Summary  : oslo.log library
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: oslo.log-bin
-Requires: oslo.log-python3
-Requires: oslo.log-license
-Requires: oslo.log-python
+Requires: oslo.log-bin = %{version}-%{release}
+Requires: oslo.log-license = %{version}-%{release}
+Requires: oslo.log-python = %{version}-%{release}
+Requires: oslo.log-python3 = %{version}-%{release}
 Requires: Sphinx
-Requires: bandit
-Requires: coverage
 Requires: debtcollector
 Requires: fixtures
-Requires: hacking
 Requires: monotonic
 Requires: openstackdocstheme
 Requires: oslo.config
@@ -30,15 +27,11 @@ Requires: oslo.context
 Requires: oslo.i18n
 Requires: oslo.serialization
 Requires: oslo.utils
-Requires: oslotest
 Requires: pbr
 Requires: pyinotify
 Requires: python-dateutil
-Requires: python-mock
 Requires: reno
 Requires: six
-Requires: stestr
-Requires: testtools
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
@@ -89,13 +82,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537929106
+export SOURCE_DATE_EPOCH=1541270599
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/oslo.log
-cp LICENSE %{buildroot}/usr/share/doc/oslo.log/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/oslo.log
+cp LICENSE %{buildroot}/usr/share/package-licenses/oslo.log/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -110,7 +103,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/oslo.log/LICENSE
+/usr/share/package-licenses/oslo.log/LICENSE
 
 %files python
 %defattr(-,root,root,-)
