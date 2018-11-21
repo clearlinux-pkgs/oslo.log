@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+3.41.0
+------
+
+* Add Windows Event Log handler
+* Clean up .gitignore references to personal tools
+* Always build universal wheels
+* Add devstack job with JSONFormatter configured
+
 3.40.1
 ------
 
