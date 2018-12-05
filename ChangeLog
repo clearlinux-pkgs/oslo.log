@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+3.42.0
+------
+
+* Add config options for log rotation
+
 3.41.0
 ------
 
