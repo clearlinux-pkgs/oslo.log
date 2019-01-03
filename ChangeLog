@@ -1,11 +1,17 @@
 CHANGES
 =======
 
+3.42.2
+------
+
+* Use template for lower-constraints
+
 3.42.1
 ------
 
 * Default oslo.policy logging to INFO
 * Update mailinglist from dev to discuss
+* Fix handling of exc\_info in OSJournalHandler
 * Fix up nits in log rotation change
 
 3.42.0
