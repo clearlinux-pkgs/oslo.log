@@ -6,7 +6,7 @@
 #
 Name     : oslo.log
 Version  : 3.42.2
-Release  : 62
+Release  : 63
 URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.2.tar.gz
 Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.2.tar.gz
 Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.2.tar.gz.asc
@@ -17,11 +17,9 @@ Requires: oslo.log-bin = %{version}-%{release}
 Requires: oslo.log-license = %{version}-%{release}
 Requires: oslo.log-python = %{version}-%{release}
 Requires: oslo.log-python3 = %{version}-%{release}
-Requires: Sphinx
 Requires: debtcollector
 Requires: fixtures
 Requires: monotonic
-Requires: openstackdocstheme
 Requires: oslo.config
 Requires: oslo.context
 Requires: oslo.i18n
@@ -30,7 +28,6 @@ Requires: oslo.utils
 Requires: pbr
 Requires: pyinotify
 Requires: python-dateutil
-Requires: reno
 Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
@@ -85,7 +82,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1546552289
+export SOURCE_DATE_EPOCH=1551029180
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
