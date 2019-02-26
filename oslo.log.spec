@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : oslo.log
-Version  : 3.42.2
-Release  : 63
-URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.2.tar.gz
-Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.2.tar.gz
-Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.2.tar.gz.asc
+Version  : 3.42.3
+Release  : 64
+URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.3.tar.gz
+Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.3.tar.gz
+Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.42.3.tar.gz.asc
 Summary  : oslo.log library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -75,14 +75,14 @@ python3 components for the oslo.log package.
 
 
 %prep
-%setup -q -n oslo.log-3.42.2
+%setup -q -n oslo.log-3.42.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551029180
+export SOURCE_DATE_EPOCH=1551157222
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
