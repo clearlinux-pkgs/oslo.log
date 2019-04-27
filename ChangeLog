@@ -1,10 +1,19 @@
 CHANGES
 =======
 
+3.43.0
+------
+
+* OpenDev Migration Patch
+* Added cmdline information into fluentFormatter event message
+* Replace openstack.org git:// URLs with https://
+* Update master for stable/stein
+
 3.42.3
 ------
 
 * Clarify some config options
+* Add 'levelkey' + 'tbkey' params
 
 3.42.2
 ------
