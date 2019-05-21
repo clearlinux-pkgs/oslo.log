@@ -1,10 +1,20 @@
 CHANGES
 =======
 
+3.44.0
+------
+
+* Avoid tox\_install.sh for constraints support
+* Cap bandit below 1.6.0 version and update sphinx and limit monotonic
+* Replace git.openstack.org URLs with opendev.org URLs
+
 3.43.0
 ------
 
 * OpenDev Migration Patch
+* Dropping the py35 testing
+* Add TRAIN to deprecated releases
+* Use raw string for regex
 * Added cmdline information into fluentFormatter event message
 * Replace openstack.org git:// URLs with https://
 * Update master for stable/stein
