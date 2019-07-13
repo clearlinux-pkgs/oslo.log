@@ -6,7 +6,7 @@
 #
 Name     : oslo.log
 Version  : 3.44.0
-Release  : 67
+Release  : 68
 URL      : https://tarballs.openstack.org/oslo.log/oslo.log-3.44.0.tar.gz
 Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-3.44.0.tar.gz
 Source99 : https://tarballs.openstack.org/oslo.log/oslo.log-3.44.0.tar.gz.asc
