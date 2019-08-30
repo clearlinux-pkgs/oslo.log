@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+3.44.1
+------
+
+* Add Python 3 Train unit tests
+* Use setLevel instead of setting logger.level directly
+* Bump the openstackdocstheme extension to 1.20
+* Blacklist sphinx 2.1.0 (autodoc bug)
+* Remove incubator migration docs
+* Modify the constraints url in tox
+* Add logging guidelines based on previous spec
+* Fix guidelines w.r.t. translation of log messages
+* Schedule a periodical check of requirements to catch py2.7 issues quickly
+
 3.44.0
 ------
 

@@ -1,5 +1,27 @@
 # This file contains recursive sources that require this package
 barbican
+castellan
+cinder
+glance
+ironic
 ironic-lib
+keystone
+keystonemiddleware
+neutron
+neutron-lib
+nova
+os-brick
+os-win
 os-xenapi
+os_vif
+oslo.cache
+oslo.messaging
 oslo.privsep
+oslo.service
+pypowervm
+python-magnumclient
+python-manilaclient
+python-neutronclient
+python-saharaclient
+sahara
+tempest
