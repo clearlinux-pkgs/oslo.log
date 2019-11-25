@@ -18,10 +18,12 @@ oslo.cache
 oslo.messaging
 oslo.privsep
 oslo.service
+oslo.versionedobjects
 pypowervm
 python-magnumclient
 python-manilaclient
 python-neutronclient
 python-saharaclient
+python-zaqarclient
 sahara
 tempest

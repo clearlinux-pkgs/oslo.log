@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+3.45.0
+------
+
+* tox: Keeping going with docs
+* Update master for stable/train
+* Add Ussuri release to versionutils
+
 3.44.1
 ------
 
