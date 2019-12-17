@@ -1,10 +1,17 @@
 CHANGES
 =======
 
+3.45.1
+------
+
+* Serialize complex objects in FluentFormatter
+* Migrate grenade jobs to py3
+
 3.45.0
 ------
 
 * tox: Keeping going with docs
+* Switch to official Ussuri jobs
 * Update master for stable/train
 * Add Ussuri release to versionutils
 
