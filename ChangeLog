@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+3.45.2
+------
+
+* Always use jsonutils.to\_primitive 'fallback' parameter
+
 3.45.1
 ------
 
