@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+4.0.0
+-----
+
+* Drop python 2.7 support and testing
+* Drop use of unittest2
+* tox: Trivial cleanup
+
 3.45.2
 ------
 
