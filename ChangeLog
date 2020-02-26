@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+4.0.1
+-----
+
+* remove outdated header
+* Stop to build universal wheel
+* Ignore releasenote artifacts files
+
 4.0.0
 -----
 
