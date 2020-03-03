@@ -6,7 +6,7 @@
 #
 Name     : oslo.log
 Version  : 4.0.1
-Release  : 76
+Release  : 77
 URL      : https://tarballs.openstack.org/oslo.log/oslo.log-4.0.1.tar.gz
 Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-4.0.1.tar.gz
 Source1  : https://tarballs.openstack.org/oslo.log/oslo.log-4.0.1.tar.gz.asc
@@ -47,8 +47,34 @@ BuildRequires : six
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/oslo.log.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+================================
+oslo.log -- Oslo Logging Library
+================================
+
+.. image:: https://img.shields.io/pypi/v/oslo.log.svg
+    :target: https://pypi.org/project/oslo.log/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/dm/oslo.log.svg
+    :target: https://pypi.org/project/oslo.log/
+    :alt: Downloads
+
+The oslo.log (logging) configuration library provides standardized
+configuration for all openstack projects. It also provides custom
+formatters, handlers and support for context specific
+logging (like resource id's etc).
+
+* Free software: Apache license
+* Documentation: https://docs.openstack.org/oslo.log/latest/
+* Source: https://opendev.org/openstack/oslo.log
+* Bugs: https://bugs.launchpad.net/oslo.log
+* Release notes: https://docs.openstack.org/releasenotes/oslo.log/
 
 %package bin
 Summary: bin components for the oslo.log package.
@@ -80,6 +106,7 @@ python components for the oslo.log package.
 Summary: python3 components for the oslo.log package.
 Group: Default
 Requires: python3-core
+Provides: pypi(oslo.log)
 
 %description python3
 python3 components for the oslo.log package.
@@ -94,7 +121,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582741285
+export SOURCE_DATE_EPOCH=1583194195
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar

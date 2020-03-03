@@ -2,7 +2,9 @@
 barbican
 castellan
 cinder
+cursive
 glance
+heat
 ironic
 ironic-lib
 keystone
@@ -27,3 +29,4 @@ python-saharaclient
 python-zaqarclient
 sahara
 tempest
+tempest-lib
