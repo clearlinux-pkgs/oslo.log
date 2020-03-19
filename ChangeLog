@@ -1,10 +1,16 @@
 CHANGES
 =======
 
+4.1.0
+-----
+
+* Add Victoria and Wallaby releases to versionutils
+
 4.0.1
 -----
 
 * remove outdated header
+* Switch to hacking 2.x
 * Stop to build universal wheel
 * Ignore releasenote artifacts files
 
