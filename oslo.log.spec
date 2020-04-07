@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : oslo.log
-Version  : 4.1.0
-Release  : 78
-URL      : https://tarballs.openstack.org/oslo.log/oslo.log-4.1.0.tar.gz
-Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-4.1.0.tar.gz
-Source1  : https://tarballs.openstack.org/oslo.log/oslo.log-4.1.0.tar.gz.asc
+Version  : 4.1.1
+Release  : 79
+URL      : https://tarballs.openstack.org/oslo.log/oslo.log-4.1.1.tar.gz
+Source0  : https://tarballs.openstack.org/oslo.log/oslo.log-4.1.1.tar.gz
+Source1  : https://tarballs.openstack.org/oslo.log/oslo.log-4.1.1.tar.gz.asc
 Summary  : oslo.log library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -28,7 +28,6 @@ Requires: oslo.utils
 Requires: pbr
 Requires: pyinotify
 Requires: python-dateutil
-Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : debtcollector
 BuildRequires : fixtures
@@ -41,7 +40,6 @@ BuildRequires : oslo.utils
 BuildRequires : pbr
 BuildRequires : pyinotify
 BuildRequires : python-dateutil
-BuildRequires : six
 
 %description
 ========================
@@ -82,30 +80,29 @@ Group: Default
 Requires: python3-core
 Provides: pypi(oslo.log)
 Requires: pypi(debtcollector)
+Requires: pypi(python_dateutil)
 Requires: pypi(oslo.config)
-Requires: pypi(oslo.context)
+Requires: pypi(oslo.utils)
+Requires: pypi(pyinotify)
+Requires: pypi(pbr)
 Requires: pypi(oslo.i18n)
 Requires: pypi(oslo.serialization)
-Requires: pypi(oslo.utils)
-Requires: pypi(pbr)
-Requires: pypi(pyinotify)
-Requires: pypi(python_dateutil)
-Requires: pypi(six)
+Requires: pypi(oslo.context)
 
 %description python3
 python3 components for the oslo.log package.
 
 
 %prep
-%setup -q -n oslo.log-4.1.0
-cd %{_builddir}/oslo.log-4.1.0
+%setup -q -n oslo.log-4.1.1
+cd %{_builddir}/oslo.log-4.1.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584633641
+export SOURCE_DATE_EPOCH=1586272927
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -122,7 +119,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.log
-cp %{_builddir}/oslo.log-4.1.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.log/57aed0b0f74e63f6b85cce11bce29ba1710b422b
+cp %{_builddir}/oslo.log-4.1.1/LICENSE %{buildroot}/usr/share/package-licenses/oslo.log/57aed0b0f74e63f6b85cce11bce29ba1710b422b
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

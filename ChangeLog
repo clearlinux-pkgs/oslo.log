@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+4.1.1
+-----
+
+* Use unittest.mock instead of third party mock
+* drop use of six
+
 4.1.0
 -----
 
