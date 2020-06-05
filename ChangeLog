@@ -1,6 +1,27 @@
 CHANGES
 =======
 
+4.2.1
+-----
+
+* Stop to use the \_\_future\_\_ module
+* Default facility to None in OSJournalHandler class
+
+4.2.0
+-----
+
+* Switch to newer openstackdocstheme and reno versions
+* Remove the unused coding style modules
+* Remove translation sections from setup.cfg
+* Add missing SYSLOG\_FACILITY to JournalHandler
+* Remove monotonic usage
+* Bump default tox env from py37 to py38
+* Add py38 package metadata
+* Add release notes links to doc index
+* Imported Translations from Zanata
+* Add Python3 victoria unit tests
+* Update master for stable/ussuri
+
 4.1.1
 -----
 
