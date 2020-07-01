@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+4.3.0
+-----
+
+* Add Victoria and Wallaby in versionutils.deprecated
+
 4.2.1
 -----
 
