@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+4.4.0
+-----
+
+* zuul: port the legacy grenade job
+* Bump bandit version
+* Added uwsgi\_name information into fluentFormatter event message
+
 4.3.0
 -----
 
@@ -20,6 +27,7 @@ CHANGES
 * Remove translation sections from setup.cfg
 * Add missing SYSLOG\_FACILITY to JournalHandler
 * Remove monotonic usage
+* Align contributing doc with oslo's policy
 * Bump default tox env from py37 to py38
 * Add py38 package metadata
 * Add release notes links to doc index
